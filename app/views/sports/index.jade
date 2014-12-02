@@ -1,0 +1,33 @@
+
+//- # sport - index
+
+extends ../layout
+
+block content
+
+  .container
+    .row
+      .col-md-8.col-md-offset-2
+        h1 Sports (#{sports.length})
+        p: a(href='/sports/new') Create New Sport
+        table.table.table-bordered.table-hover.table-striped
+          thead
+            th Name
+            th Created At
+            th Updated At
+            th Actions
+          tbody
+            each sport in sports
+              tr
+                td= sport.name
+                td= moment(sport.created_at).format('MM/DD/YY')
+                td= moment(sport.updated_at).format('MM/DD/YY')
+                td
+                  ul.list-inline
+                    li: a(href='/sports/' + sport.id).btn.btn-sm.btn-info View
+                    li: a(href='/sports/' + sport.id + '/edit').btn.btn-sm.btn-warning Edit
+                    li
+                      form(action='/sports/' + sport.id + '?_method=DELETE', method='POST').form-inline
+                        input(type='hidden', name='_csrf', value=csrf)
+                        button(type='submit').btn.btn-sm.btn-danger Remove
+        include ../_paginate
