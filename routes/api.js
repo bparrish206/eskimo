@@ -31,7 +31,7 @@ exports = module.exports = function(IoC, policies) {
     '/auth/email',
     policies.ensureLoggedOut(),
     passport.authenticate('local', {
-      session: false
+      session: true
     }),
     api.login
   );
@@ -40,7 +40,7 @@ exports = module.exports = function(IoC, policies) {
     '/auth/facebook',
     policies.ensureLoggedOut(),
     passport.authenticate('facebook-token', {
-      session: false
+      session: true
     }),
     api.login
   );
@@ -49,7 +49,7 @@ exports = module.exports = function(IoC, policies) {
     '/auth/google',
     policies.ensureLoggedOut(),
     passport.authenticate('google-token', {
-      session: false
+      session: true
     }),
     api.login
   );
