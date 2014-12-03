@@ -26,13 +26,13 @@ exports = module.exports = function() {
         pass: 'password'
       },
       facebook: {
-        enabled: false,
+        enabled: true,
         appID: '555097544634786',
-        appSecret: '●●●●●●●●',
+        appSecret: '2b65c011b434c3db0257579d9d67981c',
         scope: [ 'email' ]
       },
       google: {
-        enabled: false,
+        enabled: true,
         scope: [
           'https://www.googleapis.com/auth/userinfo.profile',
           'https://www.googleapis.com/auth/userinfo.email'
@@ -41,7 +41,7 @@ exports = module.exports = function() {
         clientSecret: 'rrdSzskKVTblS0CwFlsvLM6j'
       },
       pkg: pkg,
-      cache: false,
+      cache: true,
       showStack: true,
       assetsDir: assetsDir,
       publicDir: publicDir,
