@@ -24,7 +24,7 @@
     "cookie-parser": "^1.1.0",
     "csurf": "^1.2.1",
     "ejs": "^1.0.0",
-    "electrolyte": "0.0.3",
+    "electrolyte": "0.7.0",
     "errorhandler": "^1.0.1",
     "express": "^4.4.1",
     "express-paginate": "^0.0.4",
