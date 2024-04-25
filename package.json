@@ -88,7 +88,7 @@
     "run-sequence": "^0.3.6",
     "sinon": "^1.10.2",
     "sinon-chai": "^2.5.0",
-    "supertest": "^0.13.0",
+    "supertest": "^7.0.0",
     "through2": "^0.6.1",
     "tiny-lr": "^0.1.4"
   },
