@@ -90,7 +90,7 @@
     "sinon-chai": "^2.5.0",
     "supertest": "^0.13.0",
     "through2": "^0.6.1",
-    "tiny-lr": "^0.1.4"
+    "tiny-lr": "^1.0.0"
   },
   "gitHead": "59ace848dcff7e62bdcc40c35f1001baca4a2ab7",
   "_id": "eskimo@0.2.22",
