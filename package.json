@@ -57,7 +57,7 @@
     "strength": "^0.1.4",
     "underscore": "^1.6.0",
     "underscore.string": "^2.3.3",
-    "validator": "^3.13.0",
+    "validator": "^13.15.22",
     "winston-request-logger": "^1.0.5"
   },
   "devDependencies": {
